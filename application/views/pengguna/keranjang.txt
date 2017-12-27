@@ -1,0 +1,95 @@
+<table  align="center" width="800px">
+<tr><td colspan="2">
+
+<?php
+echo form_open('pengguna/update_keranjang');
+?><div class="nama-content"><strong>Daftar Pesanan Anda</strong></div>
+<?php if($this->session->flashdata('message')){?>
+<p class='flashdata'> <?php echo $this->session->flashdata('message');?> </p>
+<?php } ?>
+<div class="buku-tamu"><?php if(!$this->cart->contents()):
+	echo "<font color='red'>Keranjang Kosong</font><div align='right'>".nbs(10);
+	echo "<a href ='".base_url()."'>".form_button('Kembali ke Katalog','Kembali ke Katalog','class=tmbl-oren')."</a></div>";
+else:?>
+	<table   class="t_kranjang" width="100%">
+	<tr>
+	<th colspan='2' align='left'> Pesanan</th><th >Harga</th><th>Jumlah</th><th>Sub Total</th><th>Tools</th>
+	</tr>	
+	
+
+<?php $i = 1; 
+$kr=0;
+?>
+
+<?php foreach($this->cart->contents() as $items):
+$kr++;
+?>
+<tr>
+	<td><?php echo form_hidden("rowid$kr", $items['rowid']); ?>
+	<img src="<?php echo base_url().'images/'.$items['name']; ?>" width="100"/>
+	</td>
+	<td >	
+	<?php foreach ($this->cart->product_options($items['rowid']) as  $option_value): ?>
+	<?php echo $option_value; ?>
+	<?php endforeach; ?>
+		<?php  
+	  echo form_hidden("id_barang$kr", $items['id']); 
+?>
+	
+	</td>
+	
+	<td><?php echo $this->cart->format_number($items['price']);?></td>
+	<td><?php $qty=array('name'=>"qty$kr", 
+						 'class'=>'qty',
+						 'size'=>'2',
+						 'onKeyPress'=>'return numbersonly(this, event)',
+						 'value'=>$items['qty']);										echo form_input($qty); ?>
+			
+	</td>
+	<td><?php echo $this->cart->format_number($items['subtotal']); ?></td>
+	<td>
+	<?php echo '<a href="'.base_url().'pengguna/hapus_keranjang/'.$items['rowid'].'" title="Hapus" >' ?>
+			<i class='icon-remove-sign'></i><font color="#D2322D">hapus</font></a>
+			
+			<?php echo form_submit('submit','Update keranjang','class=tmbl-ijo'); ?></td>
+	
+</tr>
+	<?php 
+//<a href='".base_url()."admin/penjualan' class='tmbl-putih'> <i class='icon-list'></i> Semua Transaksi </a>
+	
+	
+	$i++; 
+	 endforeach; ?>
+<tr>
+	<td colspan='3'>Total</td><td colspan='2'>Rp <?php echo $this->cart->format_number($this->cart->total()); ?>
+	<font color='red' size='1px'>*</font>
+	</td>
+</tr>
+	</table><br></div>
+	<font color='red' size='1px'>*</font> Total harga di atas belum termasuk ongkos kirim yang akan 
+		dihitung saat selesai belanja.
+
+		<tr><td>
+		<a href="<?php echo base_url() ?>"> <?php echo form_button('bayar','&laquo; Lanjutkan belanja ','class=tmbl-putih');?> </a>
+</td><td align="right">
+	 <?php if($this->session->userdata('is_logged_in') == true) : 								//Jika siuser udah login
+	 ?>
+   <div align='right'> <a href="<?php echo base_url()?>pengguna/bayar" >
+   <?php echo form_button('bayar','Lanjutkan kepembayaran &raquo;','class=tmbl-oren');?> </a>
+	  </div>
+ <?php else : ?>
+  <a href="<?php echo base_url()?>pengguna/login_bayar" >
+  <?php echo form_button('bayar','Lanjutkan Kepembayaran &raquo;','class=tmbl-oren'); 
+  ?> </a> </div>
+
+ <?php endif; ?>
+ <?php echo form_close(); ?>
+<?php endif; ?>
+	 </td></tr>
+</table>
+
+
+
+	
+
+		

@@ -1,0 +1,30 @@
+/*  if ( isset($_SESSION['email']) ) { //cek apakah session ada
+                 redirect('pengguna/akunku'); //redirect controller c_home
+              }
+              $this->load->library('form_validation'); //load library form_validation
+              $this->form_validation->set_rules('email', 'Email', 'required'); //cek, validasi username
+              $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]'); //cek, validasi password
+              if ( $this->form_validation->run() == TRUE ) { //apabila validasi true(benar semua)
+                 $this->load->model('pengguna_model'); // load model m_user
+                 $result = $this->pengguna_model->cek_user_login( //jalankan fungsi cek_user_login dari model m_user
+                             $this->input->post('email'),  //menangkap username dari form
+                             $this->input->post('password') //menangkap password dari form
+                          );
+                  
+                             
+                        if ( $result == TRUE) { //apabila result = true(ada data)
+                                $_SESSION['email'] = $this->input->post('email'); //create session
+                                redirect('pengguna/akunku'); // redirect controller c_home
+                        }
+              } 
+               //apabila session kosong load login/v_form
+               $data['content']='pengguna/login_cust';
+		$data['title'] = "Teen25 | Login Pelanggan";
+		$data['message'] = 'Email atau password anda salah';
+		$this->load->model('pengguna_model');
+		$data['query'] = $this->pengguna_model->ambil_produk();
+		$this->load->view('pengguna/halaman',$data);  
+ */  
+ 
+ 
+ 

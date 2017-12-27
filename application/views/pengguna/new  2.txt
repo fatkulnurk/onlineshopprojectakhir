@@ -1,0 +1,15 @@
+<div class="nama" align='center'>KONFIRMASI PEMBAYARAN</div>
+<div class="tulisan">
+Terima kasih atas pembayaran yang telah dilakukan. Mohon mengisi data ini untuk proses pemeriksaan pembayaran dan pengiriman pesanan Anda. Tanpa konfirmasi ini, kami tidak dapat mengetahui pembayaran Anda.<br><br>
+<table align='center'>
+<tr><td>Nomor Pesanan</td><td><?php $id_pesan=array('name'=>'id_pesanan', 'id'=>'id_pesanan', 'class'=>'konf');
+		echo form_input($id_pesan); ?></td></tr>
+<tr><td>Nama</td><td><?php $nama=array('name'=>'nama', 'id'=>'nama', 'class'=>'konf');
+		echo form_input($nama); ?></td></tr>
+<tr><td>Tanggal Transfer</td><td><a href="javascript:NewCssCal('tgl','yyyymmdd')"><?php $tgl=array('name'=>'tgl', 'id'=>'tgl', 'class'=>'tgl');
+		echo form_input($tgl); ?>&nbsp;
+<img src="<?php echo base_url(); ?>css/images/cal.gif" width="16" height="16" alt="Pilih tanggal"></a> (yyy-mm-dd)
+		</td></tr>
+
+</table>
+</div>

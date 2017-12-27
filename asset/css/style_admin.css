@@ -1,0 +1,1117 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+font:Geneva, Arial, Helvetica, sans-serif;
+	color:#282828;
+	background-image:url(../img/spotlight-bg.png);
+	}
+	
+#main{ 
+background: #FFFFFF;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   padding:7px;
+   margin:10px auto 0;
+   cursor:auto;
+   width: 1200px;
+	}
+#footer
+{
+   background: #E9E7E7;
+   padding:20px;
+   margin:0 auto;
+   position: relative;
+   color: #252222;
+   font-size: 11px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+   text-align: center;
+
+}
+
+#login{ 
+background: #FFFFFF;
+   -webkit-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   -moz-box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   box-shadow:0 0 3px 2px rgba(0, 0, 0, 0.15);
+   padding:7px;
+   margin:10px auto 0;
+   cursor:auto;
+   width: 350px;
+	}
+	
+
+
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #2E2E2E;
+}
+
+ .inputan{
+       font-size:12px;
+       padding:4px 2px;
+       border:solid 1px #aacfe4;
+       width:200px;
+       margin:2px 0 2px 0px;
+	   position:auto;
+   }
+   .in{
+       font-size:12px;
+       padding:4px 2px;
+       border:solid 1px #aacfe4;
+       margin:2px 0 2px 0px;
+	   position:auto;
+   }
+
+.tombol{
+width:140px;
+background-color:#282828;
+border:1px solid #FFFFFF;
+-moz-border-radius:5px;
+-khtml-border-radius:5px;
+-webkit-border-radius:5px;
+color:#FFFFFF;
+}
+
+.tombol:hover{
+background-color:#000000;
+border:1px solid #000000;
+color:#FFFFFF;
+cursor:pointer;
+}
+
+.tmbl-back{
+width:40px;
+height:40px;
+background-color:#3E3E3E;
+background-image:url(../img/back.png);
+border:0px solid #428BCA;
+color:#FFFFFF;
+}
+
+.tmbl-back:hover{
+background-color:#D2322D;
+border:2px solid #FFFFFF;
+color:#FFFFFF;
+cursor:pointer;
+}
+
+.tmbl-cari{
+width:35px;
+height:25px;
+background-color:#4486F7;
+background-image:url(../img/src.png);
+background-repeat:no-repeat;
+border:0px solid #aacfe4;
+padding:4px 2px;
+margin:2px 0 2px 0px;
+cursor:pointer;
+}
+.tmbl-ok{
+cursor:pointer;
+color: #FFFFFF;
+background-color:#4486F7;
+border:0px solid #aacfe4;
+padding:3px;
+padding-left:10px;
+padding-right:10px;
+}
+.tmbl-ok:hover{
+cursor:pointer;
+color: #FFFFFF;
+background-color:#206BED;
+border:0px solid #aacfe4;
+}
+
+.tmbl-oren{
+background-color:#F0AD4E;
+padding:3px;
+padding-left:10px;
+padding-right:10px;
+border:1px solid #ED9C28;
+ border-radius:15px;
+-moz-border-radius:5px;
+-khtml-border-radius:5px;
+-webkit-border-radius:5px;
+color:#FFFFFF;
+}
+
+.tmbl-oren:hover{
+background-color:#ED9C28 ;
+border:1px solid #ED9C28;
+color:#FFFFFF;
+cursor:pointer;
+}
+
+.tmbl-putih{
+background-color:#FFFFFF;
+padding:3px;
+padding-left:10px;
+padding-right:10px;
+margin-right:3px;
+border:1px solid #4486F7;
+ border-radius:15px;
+-moz-border-radius:5px;
+-khtml-border-radius:5px;
+-webkit-border-radius:5px;
+}
+
+.tmbl-putih:hover{
+background-color:#FFFFFF ;
+border:1px solid #464646;
+cursor:pointer;
+color:#464646;
+}
+
+.tomb{
+background-color:#F0AD4E;
+width:70px;
+padding:3px;
+padding-left:10px;
+padding-right:10px;
+border:1px solid #ED9C28;
+ border-radius:15px;
+-moz-border-radius:5px;
+-khtml-border-radius:5px;
+-webkit-border-radius:5px;
+color:#FFFFFF;
+}
+
+.tomb:hover{
+background-color:#ED9C28 ;
+border:1px solid #ED9C28;
+color:#FFFFFF;
+cursor:pointer;
+}
+
+.tulisan-red{
+color: #D2322D;
+font-size: 20px; 
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+margin-bottom:10px;
+padding:5px;
+border-bottom:0.1px solid #D3D3D3;
+
+font-weight:bold;
+text-shadow:2px 2px 2px #D3D3D3;
+}
+   
+a:link {
+	color: #1E87D2;
+	text-decoration: none;
+}
+a:visited {
+	color: #1E87D2;
+}
+a:hover {
+	color: #1E87D2;
+}
+a:active {
+	color: #1E87D2;
+}
+.header{
+   position: relative;
+   font-size: 11px;
+   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+#logo{
+width: 1300px;
+background-repeat:no-repeat;
+height:70px;
+background-image:url(../img/logo-login.png);
+}
+
+.t_data
+	 {
+	 border-collapse:collapse;
+	 }
+	 
+
+	 
+	.t_data tr th
+	 {
+	 font-size:12px;
+	 font-weight:bold;
+	 background-image:url(../img/spotlight-bg.png);
+	 color:#FFFFFF;
+	 padding:6px;
+	 	  border:0.1px solid #D3D3D3;
+	 }
+	 
+	.t_data tr td
+	 {
+	 font-size:12px;
+	 padding:4px;
+
+	 }
+	 
+	
+	
+.t_poll
+	 {
+	 border-collapse:collapse;
+	 } 
+	.t_poll tr td
+	 {
+ font-size:12px;
+	 font-weight:normal;
+	 border-bottom:0.1px solid #D3D3D3;
+	 	 border-bottom-style:dashed;
+	
+	 padding:10px;
+	 
+	 }
+	 
+
+#kotak{
+	background: #FFFFFF;
+	border:1px solid #aacfe4;
+	margin-bottom:10px;
+	padding:6px;
+	z-index: 6666669 ; 
+	margin-right:20px;
+	margin-left:20px;
+	border-radius:6px; 
+	-moz-border-radius: 6px; 
+	-khtml-border-radius:6px;
+	-webkit-border-radius: 6px; 
+	font-size: 12px; 
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+#kotak-putus{
+	
+	z-index: 6666669 ; 
+	border:1px dashed #666666;
+	border-radius:6px; 
+	-moz-border-radius: 6px; 
+	-khtml-border-radius:6px;
+	-webkit-border-radius: 6px;
+	margin-top:20px;
+	
+	font-size: 12px; 
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+#kotak-biasa{
+	margin-top:5px;
+	padding:10px;
+	font-size: 12px; 
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+
+.ket{
+font-size: 12px; 
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+margin-bottom:1px;
+padding:2px;
+border-bottom:0.1px solid #666666;	
+ background: url(../img/box.png); 
+}
+
+.keterangan{
+font-size: 12px; 
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+margin-bottom:1px;
+padding:10px;
+border-bottom:0.1px solid #aacfe4;
+}
+
+.flashdata{
+background: #D0F4C8;
+border:1px solid #437D33;
+color: #437D33;
+margin-bottom:10px;
+margin-top:1px;
+padding:6px;
+z-index: 6666669 ; 
+font-size: 12px; 
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+}
+
+.t_det
+	 {
+	 border-collapse:collapse;
+	 
+	 
+	 }
+	 
+	.t_det tr th
+	 {
+	 font-size:12px;
+	 font-weight:normal;
+	border-bottom:0.1px dashed #aacfe4;
+	 padding:4px;
+	 }
+	 
+	.t_det tr td
+	 {
+	 font-size:12px;
+	 padding:4px;
+	
+	 }
+
+/*----------------------------------------------------------------- POPUP -----------------------------------------------------------*/
+#popup {
+width: 100%;
+height: 100%;
+position: fixed;
+background: rgba(0,0,0,.7);
+top: 0;
+left: 0;
+z-index: 9999;
+visibility: hidden;
+}
+
+.window {
+width: 50%;
+border-radius: 10px;
+position: relative;
+padding: 10px;
+text-align: center;
+margin: 2% ;
+background: #fff;
+}
+
+.close-button {
+width: 20px;
+height: 20px;
+background: #000;
+border-radius: 50%;
+border: 3px solid #fff;
+display: block;
+text-align: center;
+color: #fff;
+text-decoration: none;
+position: absolute;
+top: -15px;
+right: -10px;
+}
+
+#popup:target {
+visibility: visible;
+}
+
+ 
+/*----------------------------------------------------------------- halaman -----------------------------------------------------------*/ 
+#halaman{ margin:10px; font-size:13px; }
+#halaman a { 
+	padding:3px;
+	 background:#D2322D;
+	 border:3px solid #D2322D;
+	 border-radius:10px; 
+	-moz-border-radius: 10px; 
+	-khtml-border-radius:10px;
+	-webkit-border-radius: 10px; 
+	 font-size:13px;
+	 font-weight:bold;
+	 color:#FFF;
+	 text-decoration:none;
+	}
+	
+#halaman a:hover {
+	 background:#13A99D;
+	 border:5px solid #13A99D;
+	  border-radius:10px; 
+	-moz-border-radius: 10px; 
+	-khtml-border-radius:10px;
+	-webkit-border-radius: 10px; 
+	 font-size:13px;
+	 font-weight:bold;
+	 color:#FFF;
+	cursor:pointer;
+	 }
+
+	
+
+/* -------------------------------------------------------- M E N U ------------------------------------------*/
+#cssmenu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+ 
+}
+/* #transparan {background: rgba(4,111,192, .8);} */
+#cssmenu ul {
+ background: url(../img/bg-menu.jpg); 
+  height: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+#cssmenu li {
+  float: left;
+  padding: 0px;
+}
+#cssmenu li a {
+background: url(../img/bg-menu.jpg); 
+  display: block;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#cssmenu > ul > li > a {
+  color: #EDEDED;
+}
+#cssmenu ul ul a {
+  color: #EDEDED;
+}
+#cssmenu li > a:hover,
+#cssmenu ul li:hover > a {
+  background: #DD4246 url('images/hovera.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#cssmenu li ul {
+  background: url(../img/bg-menu1.jpg); 
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 225px;
+  z-index: 200;
+  /*top:1em;
+	/*left:0;*/
+
+}
+#cssmenu li:hover ul {
+  display: block;
+}
+#cssmenu li li {
+  background: url('images/sub_sepa.gif') bottom left no-repeat;
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
+}
+#cssmenu li:hover li a {
+  background: none;
+}
+#cssmenu li ul a {
+  display: block;
+  height: 48px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+#cssmenu li ul a:hover,
+#cssmenu li ul li:hover > a {
+  background: #DD4246 url('images/hover_suba.png') center left no-repeat;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+#cssmenu p {
+  clear: left;
+}
+
+
+/*------------------------------------------------------CSS BUTTON----------------------------------------------------*/
+/*!
+ * Bootstrap v2.1.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("images/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+
+
+.icon-glass {
+  background-position: 0      0;
+}
+
+.icon-music {
+  background-position: -24px 0;
+}
+
+.icon-search {
+  background-position: -48px 0;
+}
+
+.icon-envelope {
+  background-position: -72px 0;
+}
+
+.icon-heart {
+  background-position: -96px 0;
+}
+
+.icon-star {
+  background-position: -120px 0;
+}
+
+.icon-star-empty {
+  background-position: -144px 0;
+}
+
+.icon-user {
+  background-position: -168px 0;
+}
+
+.icon-film {
+  background-position: -192px 0;
+}
+
+.icon-th-large {
+  background-position: -216px 0;
+}
+
+.icon-th {
+  background-position: -240px 0;
+}
+
+.icon-th-list {
+  background-position: -264px 0;
+}
+
+.icon-ok {
+  background-position: -288px 0;
+}
+
+.icon-remove {
+  background-position: -312px 0;
+}
+
+.icon-zoom-in {
+  background-position: -336px 0;
+}
+
+.icon-zoom-out {
+  background-position: -360px 0;
+}
+
+.icon-off {
+  background-position: -384px 0;
+}
+
+.icon-signal {
+  background-position: -408px 0;
+}
+
+.icon-cog {
+  background-position: -432px 0;
+}
+
+.icon-trash {
+  background-position: -456px 0;
+}
+
+.icon-home {
+  background-position: 0 -24px;
+}
+
+.icon-file {
+  background-position: -24px -24px;
+}
+
+.icon-time {
+  background-position: -48px -24px;
+}
+
+.icon-road {
+  background-position: -72px -24px;
+}
+
+.icon-download-alt {
+  background-position: -96px -24px;
+}
+
+.icon-download {
+  background-position: -120px -24px;
+}
+
+.icon-upload {
+  background-position: -144px -24px;
+}
+
+.icon-inbox {
+  background-position: -168px -24px;
+}
+
+.icon-play-circle {
+  background-position: -192px -24px;
+}
+
+.icon-repeat {
+  background-position: -216px -24px;
+}
+
+.icon-refresh {
+  background-position: -240px -24px;
+}
+
+.icon-list-alt {
+  background-position: -264px -24px;
+}
+
+.icon-lock {
+  background-position: -287px -24px;
+}
+
+.icon-flag {
+  background-position: -312px -24px;
+}
+
+.icon-headphones {
+  background-position: -336px -24px;
+}
+
+.icon-volume-off {
+  background-position: -360px -24px;
+}
+
+.icon-volume-down {
+  background-position: -384px -24px;
+}
+
+.icon-volume-up {
+  background-position: -408px -24px;
+}
+
+.icon-qrcode {
+  background-position: -432px -24px;
+}
+
+.icon-barcode {
+  background-position: -456px -24px;
+}
+
+.icon-tag {
+  background-position: 0 -48px;
+}
+
+.icon-tags {
+  background-position: -25px -48px;
+}
+
+.icon-book {
+  background-position: -48px -48px;
+}
+
+.icon-bookmark {
+  background-position: -72px -48px;
+}
+
+.icon-print {
+  background-position: -96px -48px;
+}
+
+.icon-camera {
+  background-position: -120px -48px;
+}
+
+.icon-font {
+  background-position: -144px -48px;
+}
+
+.icon-bold {
+  background-position: -167px -48px;
+}
+
+.icon-italic {
+  background-position: -192px -48px;
+}
+
+.icon-text-height {
+  background-position: -216px -48px;
+}
+
+.icon-text-width {
+  background-position: -240px -48px;
+}
+
+.icon-align-left {
+  background-position: -264px -48px;
+}
+
+.icon-align-center {
+  background-position: -288px -48px;
+}
+
+.icon-align-right {
+  background-position: -312px -48px;
+}
+
+.icon-align-justify {
+  background-position: -336px -48px;
+}
+
+.icon-list {
+  background-position: -360px -48px;
+}
+
+.icon-indent-left {
+  background-position: -384px -48px;
+}
+
+.icon-indent-right {
+  background-position: -408px -48px;
+}
+
+.icon-facetime-video {
+  background-position: -432px -48px;
+}
+
+.icon-picture {
+  background-position: -456px -48px;
+}
+
+.icon-pencil {
+  background-position: 0 -72px;
+}
+
+.icon-map-marker {
+  background-position: -24px -72px;
+}
+
+.icon-adjust {
+  background-position: -48px -72px;
+}
+
+.icon-tint {
+  background-position: -72px -72px;
+}
+
+.icon-edit {
+  background-position: -96px -72px;
+}
+
+.icon-share {
+  background-position: -120px -72px;
+}
+
+.icon-check {
+  background-position: -144px -72px;
+}
+
+.icon-move {
+  background-position: -168px -72px;
+}
+
+.icon-step-backward {
+  background-position: -192px -72px;
+}
+
+.icon-fast-backward {
+  background-position: -216px -72px;
+}
+
+.icon-backward {
+  background-position: -240px -72px;
+}
+
+.icon-play {
+  background-position: -264px -72px;
+}
+
+.icon-pause {
+  background-position: -288px -72px;
+}
+
+.icon-stop {
+  background-position: -312px -72px;
+}
+
+.icon-forward {
+  background-position: -336px -72px;
+}
+
+.icon-fast-forward {
+  background-position: -360px -72px;
+}
+
+.icon-step-forward {
+  background-position: -384px -72px;
+}
+
+.icon-eject {
+  background-position: -408px -72px;
+}
+
+.icon-chevron-left {
+  background-position: -432px -72px;
+}
+
+.icon-chevron-right {
+  background-position: -456px -72px;
+}
+
+.icon-plus-sign {
+  background-position: 0 -96px;
+}
+
+.icon-minus-sign {
+  background-position: -24px -96px;
+}
+
+.icon-remove-sign {
+  background-position: -48px -96px;
+}
+
+.icon-ok-sign {
+  background-position: -72px -96px;
+}
+
+.icon-question-sign {
+  background-position: -96px -96px;
+}
+
+.icon-info-sign {
+  background-position: -120px -96px;
+}
+
+.icon-screenshot {
+  background-position: -144px -96px;
+}
+
+.icon-remove-circle {
+  background-position: -168px -96px;
+}
+
+.icon-ok-circle {
+  background-position: -192px -96px;
+}
+
+.icon-ban-circle {
+  background-position: -216px -96px;
+}
+
+.icon-arrow-left {
+  background-position: -240px -96px;
+}
+
+.icon-arrow-right {
+  background-position: -264px -96px;
+}
+
+.icon-arrow-up {
+  background-position: -289px -96px;
+}
+
+.icon-arrow-down {
+  background-position: -312px -96px;
+}
+
+.icon-share-alt {
+  background-position: -336px -96px;
+}
+
+.icon-resize-full {
+  background-position: -360px -96px;
+}
+
+.icon-resize-small {
+  background-position: -384px -96px;
+}
+
+.icon-plus {
+  background-position: -408px -96px;
+}
+
+.icon-minus {
+  background-position: -433px -96px;
+}
+
+.icon-asterisk {
+  background-position: -456px -96px;
+}
+
+.icon-exclamation-sign {
+  background-position: 0 -120px;
+}
+
+.icon-gift {
+  background-position: -24px -120px;
+}
+
+.icon-leaf {
+  background-position: -48px -120px;
+}
+
+.icon-fire {
+  background-position: -72px -120px;
+}
+
+.icon-eye-open {
+  background-position: -96px -120px;
+}
+
+.icon-eye-close {
+  background-position: -120px -120px;
+}
+
+.icon-warning-sign {
+  background-position: -144px -120px;
+}
+
+.icon-plane {
+  background-position: -168px -120px;
+}
+
+.icon-calendar {
+  background-position: -192px -120px;
+}
+
+.icon-random {
+  width: 16px;
+  background-position: -216px -120px;
+}
+
+.icon-comment {
+  background-position: -240px -120px;
+}
+
+.icon-magnet {
+  background-position: -264px -120px;
+}
+
+.icon-chevron-up {
+  background-position: -288px -120px;
+}
+
+.icon-chevron-down {
+  background-position: -313px -119px;
+}
+
+.icon-retweet {
+  background-position: -336px -120px;
+}
+
+.icon-shopping-cart {
+  background-position: -360px -120px;
+}
+
+.icon-folder-close {
+  background-position: -384px -120px;
+}
+
+.icon-folder-open {
+  width: 16px;
+  background-position: -408px -120px;
+}
+
+.icon-resize-vertical {
+  background-position: -432px -119px;
+}
+
+.icon-resize-horizontal {
+  background-position: -456px -118px;
+}
+
+.icon-hdd {
+  background-position: 0 -144px;
+}
+
+.icon-bullhorn {
+  background-position: -24px -144px;
+}
+
+.icon-bell {
+  background-position: -48px -144px;
+}
+
+.icon-certificate {
+  background-position: -72px -144px;
+}
+
+.icon-thumbs-up {
+  background-position: -96px -144px;
+}
+
+.icon-thumbs-down {
+  background-position: -120px -144px;
+}
+
+.icon-hand-right {
+  background-position: -144px -144px;
+}
+
+.icon-hand-left {
+  background-position: -168px -144px;
+}
+
+.icon-hand-up {
+  background-position: -192px -144px;
+}
+
+.icon-hand-down {
+  background-position: -216px -144px;
+}
+
+.icon-circle-arrow-right {
+  background-position: -240px -144px;
+}
+
+.icon-circle-arrow-left {
+  background-position: -264px -144px;
+}
+
+.icon-circle-arrow-up {
+  background-position: -288px -144px;
+}
+
+.icon-circle-arrow-down {
+  background-position: -312px -144px;
+}
+
+.icon-globe {
+  background-position: -336px -144px;
+}
+
+.icon-wrench {
+  background-position: -360px -144px;
+}
+
+.icon-tasks {
+  background-position: -384px -144px;
+}
+
+.icon-filter {
+  background-position: -408px -144px;
+}
+
+.icon-briefcase {
+  background-position: -432px -144px;
+}
+
+.icon-fullscreen {
+  background-position: -456px -144px;
+}

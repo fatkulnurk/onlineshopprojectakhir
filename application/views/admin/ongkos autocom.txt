@@ -1,0 +1,80 @@
+<script type="text/javascript">
+        function ajaxSearch() {
+            var input_data = $('#search_data').val();
+            if (input_data.length === 0) {
+                $('#suggestions').hide();
+            } else {
+
+                var post_data = {
+                    'search_data': input_data,
+                    '<?php echo $this->security->get_csrf_token_name(); ?>': '<?php echo $this->security->get_csrf_hash(); ?>'
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "<?php echo base_url(); ?>admin/autocomplete/",
+                    data: post_data,
+                    success: function(data) {
+                        // return success
+                        if (data.length > 0) {
+                            $('#suggestions').show();
+                            $('#autoSuggestionsList').addClass('auto_list');
+                            $('#autoSuggestionsList').html(data);
+                        }
+                    }
+                });
+
+            }
+        }
+</script>
+
+ <table align="center" width="100%">
+ 
+	<tr><td><?php 
+	$cari=array('id'=>'search_data','name'=>'search_data','class'=>'cariin','onkeyup'=>'ajaxSearch();');
+	echo form_input($cari); 
+	
+	?>
+	
+	
+	</td>
+	</tr>
+	<tr><td>
+	<fieldset style="border:1px dashed #666666; padding:10px; ">
+	<legend><font color="#666666"><b><?php echo $title; ?></b></font></legend>
+	<div id="result"></div>
+		
+			<table class="t_data"  >
+			<tr><th>No</th><th>PROVINSI</th><th>KOTA/ KABUPATEN</th><th>TARIF</th><th>TOOLS</th></tr>
+			<?php $no = 1;
+                foreach($data->result_array() as $tax){
+				 
+			?>
+		<div id="suggestions">
+        <div id="autoSuggestionsList">  
+          
+			<tr>
+			<td><?php echo $no++; ?></td>
+            <td><?php echo form_hidden('kota_id',$tax['kota_id']); ?>
+					  <?php echo $tax['propinsi'];  ?></td>
+            <td><?php echo $tax['kota_kabupaten'];  ?></td>
+            <td><?php echo $tax['tarif'];  ?></td>
+			<td align="center"><a href="<?php echo base_url().'admin/ongkos_edit/'.$tax['kota_id'];?>">
+				<img src="<?php echo base_url();?>asset/img/edit.png" title="edit"/></a></td>
+			</tr>
+		</div>
+        </div>
+			<?php } ?>
+			</table>
+			<div class="halaman"><?php echo $paginator;?>
+				<p>Total Data: <?php echo $total; ?></p>
+			</div>
+	
+	</fieldset>
+			
+	
+	</td></tr>
+	</td>
+	</tr>
+</table>
+
