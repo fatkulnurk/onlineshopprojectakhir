@@ -10,16 +10,25 @@ $this->load->library('session');
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>asset/bulma/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>asset/font-awesome/css/font-awesome.css">
 
-    <!-- bulma costum -->
-    <style>
-        .herohead{
+    <!-- Costum css -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>asset/css/style.css"  />
+
+    <!-- bulma costum
             background-image: radial-gradient(circle 78px at left, #16d9e3 0%, #31bfe4 47%, #46aef7 100%);
+     -->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,500,700) !important;
+        body{
+            background-image: linear-gradient(to top, #e9e3fc 0%, #dad4ec 40%, #f3e7e9 100%) !important;
+        }
+        .herohead{
+            background-image: radial-gradient(circle 1378px at left, #16d9e3 4%, #31bfe4 67%, #47bfff 80%);
             width: 100% !important;
         }
+        .form-search:hover,form-search-button:hover{
+            border:darkblue solid 1px;
+        }
     </style>
-
-    <!-- Costum css -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>asset/css/style.css"  />
 
     <!-- js import -->
     <script src="<?php echo base_url();?>asset/css/ddmenu.js" type="text/javascript"></script>
@@ -110,10 +119,10 @@ return false;
                 <div class="column is-6">
                     <div class="field has-addons has-addons-centered">
                         <div class="control is-expanded is-outlined">
-                            <input class="input is-link" type="text" placeholder="Masukan nama produk...">
+                            <input class="input is-link form-search" type="text" placeholder="Masukan nama produk...">
                         </div>
                         <p class="control">
-                            <a class="button is-link">
+                            <a class="button is-link form-search-button">
                                 Search
                             </a>
                         </p>

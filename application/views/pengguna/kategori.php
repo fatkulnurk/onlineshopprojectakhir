@@ -45,14 +45,14 @@ echo form_dropdown('urut', $options,set_value('urut'), 'class=qty').
 ?>
 <a href="<?php echo base_url().'pengguna/detail_barang/'.$brg['id_barang'] ?>">
 <p style="text-align:center; margin:0px auto; "><strong>
-<img src="<?php echo base_url().'images/'.$brg['gambar']?>" width="125" height="150" align="middle" />
+<img src="<?php echo base_url().'images/'.$brg['gambar']?>" class="image is-128x128" />
 <?php echo form_hidden('qty','1');
 	if ($brg['stok']==0){
 	echo br(2). $brg['nama_barang'].br(1)."<div class='sold' align='center'>". br(1)."Rp". number_format($brg['harga'],2,',','.')."</div></strong></p></a>";
 		}
 	else { echo  br(2)."".
 				$brg['nama_barang'].br(2)."Rp ". number_format($brg['harga'],2,',','.')."<strong></p></a><br><center>".
-			form_submit('submit','Beli', 'class="tmbl"'); }?>
+			form_submit('submit','Beli', 'class="button is-info tmbl"'); }?>
 		<?php echo form_close(); ?>
 </div>
 <?php }}   ?>

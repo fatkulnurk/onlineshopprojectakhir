@@ -6,7 +6,7 @@
 ?>
 <font style="color : #666666; font-size: 12px; font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;" ><a href="<?php echo base_url();?>pengguna">Beranda</a> &gt; 
 <a href="<?php  echo base_url().'pengguna/kategori/'.$brg['id_produk']; ?>"><?php echo $brg['nama_produk'] ?> </a>&gt;
-	<?php echo $brg['nama_barang']?> </font><br> 
+	<?php echo $brg['nama_barang']?> </font><br>
 <?php if($this->session->flashdata('message')){?>
 <p class='flashdata'> <?php echo $this->session->flashdata('message');?> </p>
 <?php } ?>
