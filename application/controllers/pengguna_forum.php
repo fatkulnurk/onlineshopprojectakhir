@@ -10,7 +10,7 @@ class Pengguna_forum extends CI_Controller {
 		
 function index() {
 		
-		$data['title']='JuraganIkan';
+		$data['title']='BuyFish';
 		$this->load->model('pengguna_model');
 		$this->load->library('pagination');
 		$page=$this->uri->segment(3);

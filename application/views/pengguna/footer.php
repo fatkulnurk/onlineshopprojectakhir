@@ -48,23 +48,8 @@ Tuban - Jawa Timur
 <footer class="footer">
     <div class="container">
         <div class="content">
-            <div class="columns">
-                <div class="column is-8">
-                    <p class="has-text-left">
-                        <a href="profil-perusahaan.php" title="About">About</a> &blacksquare; <a href="belanja.php" title="Belanja">Shop</a> &blacksquare; <a href="contact.php" title="Contact Me">Contact Me</a> &blacksquare; <a href="sitemap.xml" title="Sitemap">Sitemap</a>
-                    </p>
-                </div>
-                <div class="column is-4">
-                    <p class="has-text-right">
-                        <a href="" class="is-primary" target="_blank">
-                            <span class="icon" style="color: rgba(96,96,96,0.83);">
-                              <i class="fa fa-lg fa-globe"></i>
-                            </span>
-                            <span>Bahasa Indonesia</span>
-                        </a>
-                    </p>
-                </div>
-            </div>
+            <a href="http://localhost/teen25/api">Developer Api</a>
+            <a href=""></a>
             <hr>
             <div class="columns">
                 <div class="column is-4 is-hide-mobile is-hide-tablet">
@@ -76,8 +61,8 @@ Tuban - Jawa Timur
                 </div>
                 <div class="column is-8">
                     <p class="has-text-right">
-                            Copyright &copy; 2018 <strong>Tugas Doang</strong> All RIGHT RESERVED. <br/>
-                        Term of services &blacksquare; Privacy Policy &blacksquare; Disclaimer
+                            Copyright &copy; 2018 <strong>PT. BuyFish Indonesia</strong><br/>
+                        Ilham - Nasrul - Alif - Rudi
                     </p>
                 </div>
             </div>

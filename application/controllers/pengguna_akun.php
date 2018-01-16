@@ -14,7 +14,7 @@ class Pengguna_akun extends CI_Controller {
 		
 function links($page){
 		$data['content'] = $page;
-		$data['title'] = "JuraganIkan";
+		$data['title'] = "BuyFish";
 		$this->load->view('pengguna/halaman', $data); 
 	}
 	
@@ -24,7 +24,7 @@ function akun(){
 		echo"<meta http-equiv = 'refresh' content = '0; url = ".base_url()."pengguna/login_cust'>";
 		die(); 
 		}	$data['content']='pengguna/masuk';
-			$data['title'] = "JuraganIkan | Registrasi Pelanggan";
+			$data['title'] = "BuyFish | Registrasi Pelanggan";
 			$data['message'] = 'Selamat Datang';
 			$this->load->model('pengguna_model');
 			$data['query'] = $this->pengguna_model->ambil_produk();
@@ -50,7 +50,7 @@ function pesanan(){
 		echo"<meta http-equiv = 'refresh' content = '0; url = ".base_url()."pengguna/login_cust'>";
 		die(); 
 		}	$data['content']='pengguna/masuk';
-			$data['title'] = "JuraganIkan | Registrasi Pelanggan";
+			$data['title'] = "BuyFish | Registrasi Pelanggan";
 			$data['message'] = 'Selamat Datang';
 			$data['query'] = $this->pengguna_model->ambil_produk();
 			$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -85,7 +85,7 @@ function alamat(){
 		if(!isset($is_logged_in) || $is_logged_in != true) {
 		echo"<meta http-equiv = 'refresh' content = '0; url = ".base_url()."pengguna/login_cust'>";
 		die(); 
-	}	$data['title'] = "JuraganIkan | Akun - address book";
+	}	$data['title'] = "BuyFish | Akun - address book";
 		$this->load->model('pengguna_model');
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -102,7 +102,7 @@ function alamatbaru(){
 		if(!isset($is_logged_in) || $is_logged_in != true) {
 		echo"<meta http-equiv = 'refresh' content = '0; url = ".base_url()."pengguna/login_cust'>";
 		die(); 
-	}	$data['title'] = "JuraganIkan | Address book";
+	}	$data['title'] = "BuyFish | Address book";
 		$this->load->model('pengguna_model');
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -133,7 +133,7 @@ $this->load->model('pengguna_model');
  }
  
 function alamatbaru_exe(){
-	$data['title'] = "JuraganIkan | Address book";
+	$data['title'] = "BuyFish | Address book";
 	$this->load->library('form_validation');
 	$rules = array( array('field' => 'nama','label' => 'Nama','rules' => 'required'),
 					array('field' => 'hp','label' => 'Nomer Handphone','rules' => 'required'),
@@ -144,7 +144,7 @@ function alamatbaru_exe(){
         $this->form_validation->set_rules($rules);
         if ($this->form_validation->run() == FALSE) { //jika tidak lengkap
 				$data['content']='pengguna/bayar';
-				$data['title'] = "JuraganIkan | Address book";
+				$data['title'] = "BuyFish | Address book";
 				//$this->load->model('pengguna_model');
 				$data['query1'] = $this->pengguna_model->ambil_nama();
 				$prov = $this->pengguna_model->getpropinsi();
@@ -238,7 +238,7 @@ function alamat_del($id_alamat){
 }
 //-------------------------------------------------------------------
  function address(){
-	$data['title'] = "JuraganIkan | Akun - address book";
+	$data['title'] = "BuyFish | Akun - address book";
 	$this->load->model('pengguna_model');
 	$data['query'] = $this->pengguna_model->ambil_produk();
 	$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -249,7 +249,7 @@ function alamat_del($id_alamat){
 	$this->load->view('pengguna/footer_cekot');
 }
 function address_pilih($id_alamat) {
-	$data['title'] = "JuraganIkan | Address book";
+	$data['title'] = "BuyFish | Address book";
 	$this->load->model('pengguna_model');
 	$data['query'] = $this->pengguna_model->ambil_produk();
 	$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -266,7 +266,7 @@ function newaddress(){
 		if(!isset($is_logged_in) || $is_logged_in != true) {
 		echo"<meta http-equiv = 'refresh' content = '0; url = ".base_url()."pengguna/login_cust'>";
 		die(); 
-	}	$data['title'] = "JuraganIkan | Address book";
+	}	$data['title'] = "BuyFish | Address book";
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
 		$q=$this->pengguna_model->ambil_nama();
@@ -286,7 +286,7 @@ function newaddress(){
 //---------------------------------------------------- KONFIRMASI -------------------------------------------------------------------------------
 
 function konfirm_pembayaran(){
-		$data['title'] = "JuraganIkan | Konfirmasi Pembayaran";
+		$data['title'] = "BuyFish | Konfirmasi Pembayaran";
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
 		$data['query2'] = $this->pengguna_model->lihatpolling();

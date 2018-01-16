@@ -1,6 +1,6 @@
 
 <div id="kotak-putus">
-<div class="Ket"><table width="100%"><tr>
+<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right"><a href="<?php echo base_url();?>admin/norek_add" class="tmbl-putih"><i class="icon-plus"></i>Tambah nomor rekning</a>
 	</td></tr>
@@ -10,7 +10,7 @@
 <?php if($this->session->flashdata('message')){?>
 <p class='flashdata'> <?php echo $this->session->flashdata('message');?> </p>
 <?php } ?>
-	<table id="example" class="display" width="100%">
+	<table id="example" class="table" width="100%">
 	<thead>
 <tr><th>No</th><th>Nama Bank</th><th>Nomor Rekning</th><th>Atas Nama</th><th>Tools</th></tr>
 	</thead>

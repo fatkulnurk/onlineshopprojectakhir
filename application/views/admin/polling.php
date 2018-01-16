@@ -1,6 +1,6 @@
 Home :: Polling
 <div id="kotak-putus">
-<div class="Ket"><table width="100%"><tr>
+<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> Polling </td>
 	<td align="right"><?php
 echo "<a href='".base_url()."pengguna_polling/polling_add' class='tmbl-putih'> <i class='icon-plus'></i> Buat Polling Baru </a>";
@@ -9,7 +9,7 @@ echo "<a href='".base_url()."pengguna_polling/polling_add' class='tmbl-putih'> <
 </div>
 <div id="kotak-biasa">
 
-	<table id="example" class="display" width="100%">
+	<table id="example" class="table" width="100%">
 	<thead>
 <tr><th>No.</th><th>Pertanyaan</th><th>Tanggal</th><th>Tools</th></tr>
 	</thead>

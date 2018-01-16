@@ -2,7 +2,7 @@
 <div class="Ket"><img src="<?php echo base_url();?>asset/img/prod.png"> User
 </div>
 <div id="kotak-biasa">
-	<table id="example" class="display" width="100%">
+	<table id="example" class="table" width="100%">
 	<thead>
 <tr><th>No.</th><th>Nama</th><th>Email</th><th>Tgl Registrasi </th><th>Menu</th></tr>
 	</thead>

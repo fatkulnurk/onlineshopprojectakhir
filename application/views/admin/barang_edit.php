@@ -4,17 +4,17 @@
 	echo form_hidden('id_barang',$edit->id_barang);
 ?>
 <div id="kotak-putus"><?php echo form_open_multipart('admin/barang_add_exe'); ?>
-	<div class="Ket"><table width="100%"><tr>
+	<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> Barang </td>
-	<td align="right"><?php echo form_submit('submit','Simpan','class=tomb'); ?>
-		<a href="<?php echo base_url().'admin/Barang';?>"><?php echo form_button('back','Batal','class=tomb'); ?></a></td></tr>
+	<td align="right"><?php echo form_submit('submit','Simpan','class="btn btn-info"'); ?>
+		<a href="<?php echo base_url().'admin/Barang';?>"><?php echo form_button('back','Batal','class="btn btn-default"'); ?></a></td></tr>
 	</table>
 </div>
 <div id="kotak-biasa">
 <?php if($this->session->flashdata('message')){?>
 <p class='flashdata'> <?php echo $this->session->flashdata('message');?> </p>
 <?php } ?>
-<table align="center"  border="0">
+<table align="center" class="table" border="0">
  <tr>
     <td colspan="3"> 
 <input name="tgl" type="hidden" value="<?php echo $edit->tgl; ?>"></td>

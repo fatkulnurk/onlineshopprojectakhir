@@ -1,15 +1,13 @@
 <?php if($this->session->flashdata('message')){?>
 <p class='flashdata'> <?php echo $this->session->flashdata('message');?> </p>
 <?php } ?>
-<div id="kotak-putus">
-<div class="Ket"><table width="100%"><tr>
+<table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right"><?php 
 		echo "<a href='".base_url()."admin/barang_add' class='tmbl-putih'><i class='icon-plus'></i>Upload baru</a>"; ?></td></tr>
 	</table>
-</div>
 <div id="kotak-biasa">
-	<table id="example" class="display" width="100%">
+	<table id="example" class="table" width="100%">
 	<thead>
 	<tr>
 	<th>No.</th>
@@ -53,5 +51,4 @@
 	
 <?php $no++; } ?></tbody>
 </table>
-</div>
 </div>

@@ -1,7 +1,7 @@
 <div id="kotak-putus"><div class="Ket"><img src="<?php echo base_url();?>asset/img/prod.png"> Pesanan
 </div>
 <div id="kotak-biasa">
-	<table id="example" class="display" width="100%">
+	<table id="example" class="table" width="100%">
 	<thead>
 	<tr>
 	<th>No.</th>

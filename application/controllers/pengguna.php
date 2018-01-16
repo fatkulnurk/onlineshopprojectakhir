@@ -14,14 +14,14 @@ class Pengguna extends CI_Controller {
 		
 		
 function index() {
-		$data['title']='Teen25';
+		$data['title']='BuyFish - Jual Beli Ikan Nomor 1';
 		redirect("pengguna/barang");	
 		
 	}
 	
 function barang() {
 $data['content'] = 'pengguna/beranda';
-		$data['title']='Teen25';
+		$data['title']='BuyFish - Jual Beli Ikan Nomor Satu';
   $page=$this->uri->segment(3);
   $limit = 15;      
   if(!$page){
@@ -68,14 +68,14 @@ $data['content'] = 'pengguna/beranda';
 	
 function links($page){
 		$data['content'] = $page;
-		$data['title'] = "Teen25";
+		$data['title'] = "BuyFish - Jual Beli Ikan Nomor 1";
 		$this->load->view('pengguna/halaman', $data); 
 	}
 	
 //---------------------- detail barang ------------------------------------------------------------------------------------------------------------------
 
 function detail_barang($id_barang){
-		$data['title'] = 'Teen25';
+		$data['title'] = 'BuyFish - Jual Beli Ikan Nomor 1';
 		$this->load->model('pengguna_model');
 		$data['data'] = $this->pengguna_model->detail_barang($id_barang);
 		$data['data1'] = $this->pengguna_model->ambil_komentar($id_barang);
@@ -97,7 +97,7 @@ function detail_barang($id_barang){
 	}
 
 function kategori($id_produk){
-	$data['title']='Teen25';
+	$data['title']='BuyFish';
   $page=$this->uri->segment(4);
   $limit = 30;      
   if(!$page){
@@ -199,7 +199,7 @@ function bukutamu(){
 	 $this->load->view('pengguna/footer');
 }	
 function bukutamu_add_exe(){		
-		$data['title'] = "Teen25 | Testimonial Pengunjung";
+		$data['title'] = "BuyFish | Testimonial Pengunjung";
 		$this->load->library('form_validation');
 		$rules = array( array('field' => 'nama', 'label' => 'Nama', 'rules' => 'required'),
 						array('field' => 'email', 'label' => 'Email', 'rules' => 'required|valid_email'),
@@ -271,7 +271,7 @@ $total = $this->cart->total_items();
 
 function keranjang() {
 		$this->load->library('cart');
-		$data['title'] = "Teen25 | Shopping Cart";
+		$data['title'] = "BuyFish | Shopping Cart";
 		//$data['stok']=$this->pengguna_model->stokbarang(); 
 		$data['query1'] = $this->pengguna_model->ambil_nama();
 		$this->load->view('pengguna/header-cekot',$data);
@@ -311,7 +311,7 @@ function update_keranjang() {
 //---------------------------------------- REGISTRASI ------------------------------------------------------------------------------------------
 function registrasi(){
 	$data['content']='pengguna/registrasi';
-	$data['title'] = "Teen25 | Registrasi Pelanggan";
+	$data['title'] = "BuyFish | Registrasi Pelanggan";
 	$data['query'] = $this->pengguna_model->ambil_produk();
 	$data['query1'] = $this->pengguna_model->ambil_nama();
 	$data['message']="";
@@ -354,7 +354,7 @@ function registrasi(){
  
 function registrasi_sukses(){
 		$data['content']='pengguna/akun';
-		$data['title'] = "Teen25 | Registrasi Pelanggan";
+		$data['title'] = "BuyFish | Registrasi Pelanggan";
 		$data['message'] = 'Pendaftaran pelanggan sukses';
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$this->load->view('pengguna/halaman',$data);
@@ -365,7 +365,7 @@ function registrasi_sukses(){
 
 function login_cust(){
 		$data['content']='pengguna/login_cust';
-		$data['title'] = "Teen25 | Login Pelanggan";
+		$data['title'] = "BuyFish | Login Pelanggan";
 		$this->load->model('pengguna_model');
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -395,7 +395,7 @@ function login() {
   else // username atau password salah
   {
 	$data['content']='pengguna/login_cust';
-		$data['title'] = "Teen25 | Login Pelanggan";
+		$data['title'] = "BuyFish | Login Pelanggan";
 		$data['message'] = 'Email atau password anda salah';
 		$this->load->model('pengguna_model');
 		$data['query'] = $this->pengguna_model->ambil_produk();
@@ -413,7 +413,7 @@ function is_logged_in() {
 	} 
 	
 function lupa_pass(){
-	$data['title'] = "Teen25 | Login Pelanggan";
+	$data['title'] = "BuyFish | Login Pelanggan";
 	$data['content']='pengguna/lupa_pass';
 	$data['query'] = $this->pengguna_model->ambil_produk();
 	$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -429,19 +429,19 @@ function lupa_pass(){
 				redirect('pengguna/lupa_pass');
 				} else{
 			$config['protocol'] = 'smtp';
-			$config['smtp_host'] = 'ssl://smtp.googlemail.com';
+			$config['smtp_host'] = 'ssl://server250.web-hosting.com';
 			$config['smtp_port'] = 465;
-			$config['smtp_user'] = 'Teen25brondong@gmail.com';
-			$config['smtp_pass'] = 'ikan10101997';
+			$config['smtp_user'] = 'bos@dibumi.com';
+			$config['smtp_pass'] = 'bos@dibumi.com';
 			$this->load->library('email', $config);
 			$this->email->set_newline("\r\n");
-			$this->email->from('noreplay-Teen25brondong@localhost.com', 'Teen25');
+			$this->email->from('bos@dibumi.com', 'BuyFish');
 			$this->email->set_mailtype("html");
 			$this->email->to("$m");       
-			$this->email->subject('Teen25 - Lupa Password Anda?');
+			$this->email->subject('BuyFish - Lupa Password Anda?');
 			foreach($mail as $m){
 			$nama=$m->nama_user;
-			$pesan = '<center><h1><a href="'.base_url().'pengguna/barang" ><font face="Curlz MT" color="#D2322D">Teen25</font></a>
+			$pesan = '<center><h1><a href="'.base_url().'pengguna/barang" ><font face="Curlz MT" color="#D2322D">BuyFish</font></a>
 			<i> - Ganti Password Anda</i></h1>Hi '.$nama.'! <br>
 			<a href="'.base_url().'pengguna/reset_pass/'.$m->id_user.'">Klik disini </a> untuk mengganti password anda';
 			$this->email->message($pesan);
@@ -457,7 +457,7 @@ function lupa_pass(){
 		}
 	}
 function reset_pass($id_user){
-	$data['title'] = "Teen25 | Login Pelanggan";
+	$data['title'] = "BuyFish | Login Pelanggan";
 	$data['content']='pengguna/lupa_pass_ganti';
 	$data['query'] = $this->pengguna_model->ambil_produk();
 	$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -492,7 +492,7 @@ function reset_pass($id_user){
 //----------------------------------PEMBAYARAN alamat----------------------------------------------------------------------------------------
 /* function alamat(){
 		
-		$data['title'] = "Teen25 | Polling";
+		$data['title'] = "BuyFish | Polling";
 		$this->load->model('pengguna_model');
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -503,7 +503,7 @@ function reset_pass($id_user){
 
 
 function login_bayar(){
-		$data['title'] = "Teen25 | Login Pelanggan";
+		$data['title'] = "BuyFish | Login Pelanggan";
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		if($this->input->post('submit')){
 			$query = $this->pengguna_model->validate();
@@ -522,7 +522,7 @@ function login_bayar(){
 			} else // username atau password salah
 			{
 				$data['content']='pengguna/login_bayar';
-				$data['title'] = "Teen25 | Login Pelanggan";
+				$data['title'] = "BuyFish | Login Pelanggan";
 				$data['message'] = 'Email atau password anda salah';
 				$this->load->model('pengguna_model');
 				$data['query'] = $this->pengguna_model->ambil_produk();
@@ -541,7 +541,7 @@ function login_bayar(){
 function bayar(){
 	$data['content']='pengguna/bayar';
 	$this->load->library('cart');
-	$data['title'] = "Teen25 | Bayar";
+	$data['title'] = "BuyFish | Bayar";
 	$data['query'] = $this->pengguna_model->ambil_produk();
 	$data['query1'] = $this->pengguna_model->ambil_nama();
 	if($this->session->userdata('is_logged_in') == true){
@@ -610,7 +610,7 @@ function ambil_ongkir() {
 
 
 function bayar_exe() {
-	$data['title'] = "Teen25 | Checkout";
+	$data['title'] = "BuyFish | Checkout";
 	$data['content']='pengguna/selesai_belanja';
 	$q=$this->pengguna_model->cekidpesanan();	
 	if($q->result_array()==TRUE ) { 
@@ -628,18 +628,18 @@ function bayar_exe() {
 		$nama = $this->input->post('nama');
 		//-- KIRIM EMAIL --//
 		$config['protocol'] = 'smtp';
-		$config['smtp_host'] = 'ssl://smtp.googlemail.com';
+		$config['smtp_host'] = 'ssl://server250.web-hosting.com';
 		$config['smtp_port'] = 465;
-		$config['smtp_user'] = 'Teen25brondong@gmail.com';
-		$config['smtp_pass'] = 'ikan10101997';
+		$config['smtp_user'] = 'bos@dibumi.com';
+		$config['smtp_pass'] = 'bos@dibumi.com';
 		$this->load->library('email', $config);
 		$this->email->set_newline("\r\n");
-		$this->email->from('noreplay-Teen25brondong@localhost.com', 'Teen25');
+		$this->email->from('bos@dibumi.com', 'BuyFish');
 		$this->email->set_mailtype("html");
 		$this->email->to("$eml");       
-		$this->email->subject("Teen25 - Detail Pembelian [".$idpesanan."]");
+		$this->email->subject("BuyFish - Detail Pembelian [".$idpesanan."]");
 	
-		$pesan = '<center><font size=4 face=ariel><b>Hei <font color=red><b>'.$nama.'</b></font>, Terimakasih telah melakukan pembelian di web kami Teen25 pada tanggal <font color=red><b>'.$tgl.'</b></font> dengan total pembelian <font color=red><b>Rp. '.$this->cart->format_number($subtotal).'</b></font> id pesanan anda adalah <font color=red><b>'.$idpesanan.'</b></font></b></font><br><br><font size=3 face=arial>Jika ada pertanyaan silahkan hubungi custemer service kami: 089666816527</font> </center>';
+		$pesan = '<center><font size=4 face=ariel><b>Hei <font color=red><b>'.$nama.'</b></font>, Terimakasih telah melakukan pembelian di web kami BuyFish pada tanggal <font color=red><b>'.$tgl.'</b></font> dengan total pembelian <font color=red><b>Rp. '.$this->cart->format_number($subtotal).'</b></font> id pesanan anda adalah <font color=red><b>'.$idpesanan.'</b></font></b></font><br><br><font size=3 face=arial>Jika ada pertanyaan silahkan hubungi custemer service kami: 089666816527</font> </center>';
 		$this->email->message($pesan);
 		
 		if($this->email->send()){
@@ -654,7 +654,7 @@ function bayar_exe() {
 }
 
 function addbayar_exe() {
-		$data['title'] = "Teen25 | Checkout";
+		$data['title'] = "BuyFish | Checkout";
 		$data['query1'] = $this->pengguna_model->ambil_nama();
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$this->load->library('form_validation');
@@ -693,18 +693,18 @@ function addbayar_exe() {
 			
 		//-- KIRIM EMAIL --//
 		$config['protocol'] = 'smtp';
-		$config['smtp_host'] = 'ssl://smtp.googlemail.com';
+		$config['smtp_host'] = 'ssl://server250.web-hosting.com';
 		$config['smtp_port'] = 465;
-		$config['smtp_user'] = 'Teen25brondong@gmail.com';
-		$config['smtp_pass'] = 'ikan10101997';
+		$config['smtp_user'] = 'bos@dibumi.com';
+		$config['smtp_pass'] = 'bos@dibumi.com';
 		$this->load->library('email', $config);
 		$this->email->set_newline("\r\n");
-		$this->email->from('noreplay-Teen25brondong@localhost.com', 'Teen25');
+		$this->email->from('bos@dibumi.com', 'BuyFish');
 		$this->email->set_mailtype("html");
 		$this->email->to("$eml");       
-		$this->email->subject("Teen25 - Detail Pembelian [".$idpesanan."]");
+		$this->email->subject("BuyFish - Detail Pembelian [".$idpesanan."]");
 	
-		$pesan = '<center><font size=4 face=ariel><b>Hei <font color=red><b>'.$nama.'</b></font>, Terimakasih telah melakukan pembelian di web kami Teen25 pada tanggal <font color=red><b>'.$tgl.'</b></font> dengan total pembelian <font color=red><b>Rp. '.$this->cart->format_number($subtotal).'</b></font> id pesanan anda adalah <font color=red><b>'.$idpesanan.'</b></font></b></font><br><br><font size=3 face=arial>Jika ada pertanyaan silahkan hubungi custemer service kami: 089666816527</font> </center>';
+		$pesan = '<center><font size=4 face=ariel><b>Hei <font color=red><b>'.$nama.'</b></font>, Terimakasih telah melakukan pembelian di web kami BuyFish pada tanggal <font color=red><b>'.$tgl.'</b></font> dengan total pembelian <font color=red><b>Rp. '.$this->cart->format_number($subtotal).'</b></font> id pesanan anda adalah <font color=red><b>'.$idpesanan.'</b></font></b></font><br><br><font size=3 face=arial>Jika ada pertanyaan silahkan hubungi custemer service kami: 089666816527</font> </center>';
 		$this->email->message($pesan);
 			}
 		if($this->email->send()){
@@ -725,7 +725,7 @@ function addbayar_exe() {
 
 //----------------------------------------------------bayar daftar------------------------------------------------------
 function bayar_daftar_exe(){
-	$data['title'] = "Teen25 | Checkout";
+	$data['title'] = "BuyFish | Checkout";
 		$this->load->library('form_validation');
 		$rules = array( array('field' => 'email', 'label' => 'Email', 'rules' => 'required|valid_email'),
 						array('field' => 'password', 'label' => 'Password', 'rules' => 'required|min_length[6]|matches[konfirmasi_password]'),
@@ -766,18 +766,18 @@ function bayar_daftar_exe(){
 		$nama = $this->input->post('nama');
 		//-- KIRIM EMAIL --//
 		$config['protocol'] = 'smtp';
-		$config['smtp_host'] = 'ssl://smtp.googlemail.com';
+		$config['smtp_host'] = 'ssl://server250.web-hosting.com';
 		$config['smtp_port'] = 465;
-		$config['smtp_user'] = 'Teen25brondong@gmail.com';
-		$config['smtp_pass'] = 'ikan10101997';
+		$config['smtp_user'] = 'bos@dibumi.com';
+		$config['smtp_pass'] = 'bos@dibumi.com';
 		$this->load->library('email', $config);
 		$this->email->set_newline("\r\n");
-		$this->email->from('noreplay-Teen25brondong@localhost.com', 'Teen25');
+		$this->email->from('bos@dibumi.com', 'BuyFish');
 		$this->email->set_mailtype("html");
 		$this->email->to("$eml");       
-		$this->email->subject("Teen25 - Detail Pembelian [".$idpesanan."]");
+		$this->email->subject("BuyFish - Detail Pembelian [".$idpesanan."]");
 	
-		$pesan = '<center><font size=4 face=ariel><b>Hei <font color=red><b>'.$nama.'</b></font>, Terimakasih telah melakukan pembelian di web kami Teen25 pada tanggal <font color=red><b>'.$tgl.'</b></font> dengan total pembelian <font color=red><b>Rp. '.$this->cart->format_number($subtotal).'</b></font> id pesanan anda adalah <font color=red><b>'.$idpesanan.'</b></font></b></font><br><br><font size=3 face=arial>Jika ada pertanyaan silahkan hubungi custemer service kami: 089666816527</font> </center>';
+		$pesan = '<center><font size=4 face=ariel><b>Hei <font color=red><b>'.$nama.'</b></font>, Terimakasih telah melakukan pembelian di web kami BuyFish pada tanggal <font color=red><b>'.$tgl.'</b></font> dengan total pembelian <font color=red><b>Rp. '.$this->cart->format_number($subtotal).'</b></font> id pesanan anda adalah <font color=red><b>'.$idpesanan.'</b></font></b></font><br><br><font size=3 face=arial>Jika ada pertanyaan silahkan hubungi custemer service kami: 089666816527</font> </center>';
 		$this->email->message($pesan);
 		
 		if($this->email->send()){
@@ -794,7 +794,7 @@ function bayar_daftar_exe(){
 //----------------------------------------------------Selesai------------------------------------------------------
 function selesai_belanja() {
 		$data['content']='pengguna/selesai_belanja';
-		$data['title'] = "Teen25 | checkout";
+		$data['title'] = "BuyFish | checkout";
 		$this->load->library('cart');
 		$this->cart->destroy();	
 		$data['query'] = $this->pengguna_model->ambil_produk();
@@ -807,7 +807,7 @@ function selesai_belanja() {
 	}
 //-----------------------------------CARA BELANJA------------------------------------------------------------------------------------------
 function carabelanja(){
-		$data['title'] = "Teen25 | How to Shop";
+		$data['title'] = "BuyFish | How to Shop";
 		$this->load->model('pengguna_model');
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
@@ -826,7 +826,7 @@ function carabelanja(){
 }
 //---------------------------------------------------------------Pengiriman--------------------------------------------------------------------
 function pengiriman(){
-		$data['title'] = "Teen25 | Pengiriman";
+		$data['title'] = "BuyFish | Pengiriman";
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
 		$data['query2'] = $this->pengguna_model->lihatpolling();
@@ -845,7 +845,7 @@ function pengiriman(){
 }
 //----------------------------------------------------------Cara Pembayaran---------------------------------------------------------------
 function carapembayaran(){
-		$data['title'] = "Teen25 | Pengiriman";
+		$data['title'] = "BuyFish | Pengiriman";
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
 		$data['query2'] = $this->pengguna_model->lihatpolling();
@@ -864,7 +864,7 @@ function carapembayaran(){
 		$this->load->view('pengguna/footer');
 }
 function lokasi(){
-		$data['title'] = "Teen25 | Pengiriman";
+		$data['title'] = "BuyFish | Pengiriman";
 		$data['query'] = $this->pengguna_model->ambil_produk();
 		$data['query1'] = $this->pengguna_model->ambil_nama();
 		$data['query2'] = $this->pengguna_model->lihatpolling();

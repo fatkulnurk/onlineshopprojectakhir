@@ -1,7 +1,7 @@
 <td valign="top">
 
 <div class="nama-content"  >CARA PEMBAYARAN</div>
-Teen25 memberikan kemudahan kepada Anda dalam bertransaksi dan berbelanja.
+BuyFish memberikan kemudahan kepada Anda dalam bertransaksi dan berbelanja.
 <div class="ktkbiasa">
 	<div class="nama-ktkbiasa"  >Bank Transfer</div>
 	Kami menerima pembayaran melalui transfer uang tunai antarbank. Anda dapat melakukan transfer uang tunai melalui bank Anda dan juga melalui ATM. 

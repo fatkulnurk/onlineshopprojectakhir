@@ -10,7 +10,7 @@
 	foreach($data as $or)
 	{?><div class="Ket">
 
-<table width="100%"><tr>
+<table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> Pesanan </td>
 	<td align="right"><a href="<?php echo base_url(); ?>admin/pesanan"><?php echo form_submit('submit','Simpan','class=tomb'); ?></a>
 	
@@ -19,7 +19,7 @@
 </div>
 
 
-<table align="center">
+<table align="center" class="table">
 <tr><td>Id Pesanan</td><td>: <?php  echo $or ->id_pesanan;
 echo form_hidden('id_pesanan',$or->id_pesanan); }?></td></tr>
 <tr><td>Nomor Resi</td><td>: <?php echo form_input('resi','','class=inputan'); ?></td></tr>

@@ -39,7 +39,7 @@ border:0.1px solid #D3D3D3;
 	 
 -->
 </style>
-	<table id="example" class="t_data" width="100%">
+	<table id="example" class="t_data" width="100%" class="table">
 	<tr>
 	<th >No.</th>
 	<th >Id Pesanan</th>	

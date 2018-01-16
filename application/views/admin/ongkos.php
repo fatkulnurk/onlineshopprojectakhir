@@ -1,11 +1,11 @@
 <div id="kotak-putus">
-<div class="Ket"><table width="100%"><tr>
+<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right"></td></tr>
 	</table>
 </div>
 <div id="kotak-biasa">
-	<table id="example" class="display" width="100%">
+	<table id="example"  class="table" width="100%">
 	<thead>
 <tr><th>No</th><th>PROVINSI</th><th>KOTA/ KABUPATEN</th><th>TARIF</th><th>TOOLS</th></tr>
 	</thead>

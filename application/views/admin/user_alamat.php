@@ -1,12 +1,12 @@
 <div id="kotak-putus">
 <div class="Ket">
-<table width="100%"><tr>
+<table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> Daftar Alamat <b><?php echo $nama->nama_user; ?></b></td>
 	<td align="right"><?php echo "<a href='".base_url()."admin/user'>". form_button('Insert','Kembali','class=tmbl-oren')."</a>"; ?></td></tr>
 	</table>
 </div>
 <div id="kotak-biasa">
-	<table id="example" class="display" width="100%">
+	<table id="example" class="table" width="100%">
 	<thead>
 <tr><th>No.</th><th>Nama</th><th>Alamat</th><th>No. Telpon </th><th>Status</th></tr>
 	</thead>

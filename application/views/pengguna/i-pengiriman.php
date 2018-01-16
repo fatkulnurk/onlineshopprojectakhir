@@ -10,7 +10,7 @@
 
 <td valign="top">
 <div class="nama-content"  >WAKTU DAN BIAYA PENGIRIMAN BARANG</div>
-<p>Teen25 mengirimkan barang pesanan ke seluruh Indonesia. Bekerja sama dengan JNE, Pandu Logistic dan Pos Indonesia, 
+<p>BuyFish mengirimkan barang pesanan ke seluruh Indonesia. Bekerja sama dengan JNE, Pandu Logistic dan Pos Indonesia,
 kami pastikan pengiriman barang Anda aman dan layanan pelanggan kami akan selalu membantu Anda dengan memberikan informasi mengenai 
 status pengiriman barang yang Anda pesan.</p>
 <p>Pengiriman dilakukan dalam waktu 2 hingga 6 hari kerja. 

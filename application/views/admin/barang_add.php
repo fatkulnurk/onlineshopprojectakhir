@@ -1,13 +1,13 @@
 <div id="kotak-putus"><?php echo form_open_multipart('admin/barang_add_exe'); ?>
-	<div class="Ket"><table width="100%"><tr>
+	<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> Barang </td>
-	<td align="right"><?php echo form_submit('submit','Simpan','class=tmbl-putih'); ?>
-		<a href="<?php echo base_url().'admin/Barang';?>" class="tmbl-putih"><i class='icon-remove'></i> Batal</a></td></tr>
+	<td align="right"><?php echo form_submit('submit','Simpan','class="btn btn-info"'); ?>
+		<a href="<?php echo base_url().'admin/Barang';?>" class="btn btn-default"><i class='icon-remove'></i> Batal</a></td></tr>
 	</table>
 </div>
 <div id="kotak-biasa">
 
-<table align="center" border="0">
+<table align="center" border="0" class="table">
  <tr>
     <td colspan="3"> <?php $today = date("Y-m-d"); ?>
 <input name="tgl" type="hidden" value="<?php echo $today; ?>" ></td>

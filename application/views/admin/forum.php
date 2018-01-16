@@ -1,13 +1,13 @@
 
 <div id="kotak-putus">
-<div class="Ket"><table width="100%"><tr>
+<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> Forum </td>
 	<td align="right"><?php echo "<a href='".base_url()."pengguna_forum/admin_topikadd' class='tmbl-putih'>";?>Buat topik baru
 	<i class="icon-comment "></i></a> </td></tr>
 	</table>
 </div>
 <div id="kotak-biasa">
-	<table id="example" class="display" width="100%">
+	<table id="example" class="display" width="100%" class="table">
 	<thead>
 	<tr><th width="5"></th><th>Isi</th><th>Posting</th><th>Replay</th></tr>
 	</thead>

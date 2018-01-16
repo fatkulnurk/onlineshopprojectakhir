@@ -39,7 +39,7 @@ $is_logged_in = $this->session->userdata('is_logged_in');
    
   } 
 	$data['content'] = ('admin/beranda');
-	$data['title'] = "JuraganIkan - ADMIN | Login";
+	$data['title'] = "ADMIN | Login";
 	$this->load->view('admin/halaman',$data);
 }
 
@@ -72,7 +72,7 @@ $is_logged_in = $this->session->userdata('is_logged_in');
 		$data['query'] = $this->admin_model->ambil_produk();
 		$this->load->view('admin/halaman', $data);
 	}
-	
+
 function produk_add(){
 $is_logged_in = $this->session->userdata('is_logged_in');
   if(!isset($is_logged_in) || $is_logged_in != true)
@@ -83,16 +83,16 @@ $is_logged_in = $this->session->userdata('is_logged_in');
 				</script>
 				<?php
  echo"<meta http-equiv = 'refresh' content = '0; url = ".base_url()."admin_login'>";
-   die(); 
-   
-  } 
+   die();
+
+  }
 	$data['title'] = "Tambah Data Kategori";
 	$data['content'] = 'admin/produk_add';
 	$this->load->library('form_validation');
 	if($this->input->post('submit')){
 		$this->form_validation->set_rules('nama_produk','Nama produk','required');
 		if ($this->form_validation->run() == FALSE){
-         	$this->load->view('admin/halaman',$data); 
+         	$this->load->view('admin/halaman',$data);
         }else{
 		$this->admin_model->produk_simpan();
 		$this->session->set_flashdata('message', 'Kategori Sudah Ada !');
@@ -733,7 +733,7 @@ $objPHPExcel->getActiveSheet()->setTitle('Data Mahasiswa');
 // Set active sheet index to the first sheet, so <a class="zem_slink" title="Microsoft Excel" href="http://office.microsoft.com/en-us/excel" target="_blank" rel="homepage">Excel</a> opens this as the first sheet
 $objPHPExcel->setActiveSheetIndex(0);
 
-// Redirect output to a client’s web browser (Excel2007)
+// Redirect output to a clientï¿½s web browser (Excel2007)
 header('<a class="zem_slink" title="Internet media type" href="http://en.wikipedia.org/wiki/Internet_media_type" target="_blank" rel="wikipedia">Content-Type</a>: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
 header('Content-Disposition: attachment;filename="Data_Mhs_'.mdate('%d_%m_%y').'.xlsx"');
 header('<a class="zem_slink" title="Web cache" href="http://en.wikipedia.org/wiki/Web_cache" target="_blank" rel="wikipedia">Cache-Control</a>: max-age=0');

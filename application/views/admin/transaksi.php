@@ -17,7 +17,7 @@
 </script>
 
 <div id="kotak-putus">
-<div class="Ket"><table width="100%"><tr>
+<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right">
 		<?php echo "<a href='".base_url()."admin/transaksi' class='tmbl-putih'> <i class='icon-list'></i> Semua Transaksi </a>
@@ -51,7 +51,7 @@
 			  form_close(); ?>
 </center>
 <div id="kotak-biasa">
-	<table id="example" class="display" width="100%">
+	<table id="example" class="table" width="100%">
 	<thead>
 		<tr><th>No.</th><th>Id Pesanan</th><th>Tgl Pengiriman </th>
 			<th>Nama Barang </th><th>Qty</th><th>Harga</th><th>Sub total</th></tr>

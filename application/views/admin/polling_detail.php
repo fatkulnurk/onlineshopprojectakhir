@@ -1,5 +1,5 @@
 <div id="kotak-putus">
-<div class="Ket"><table width="100%"><tr>
+<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png">Detail polling </td>
 	<td align="right"><?php foreach($pertanyaan->result_array() as $pr) {
 	echo '<a href="'.base_url().'pengguna_polling/reset_hasil/'.$pr['idtanya'].'"
@@ -12,7 +12,7 @@
 	</table>
 </div>
 <div id="kotak-biasa">
-<table align="center" width="100%">
+<table align="center" width="100%" class="table">
 <tr><td>
 	<!---------------DIAGRAM--------------------->
 <center>	<?php if (!empty($chart)) 

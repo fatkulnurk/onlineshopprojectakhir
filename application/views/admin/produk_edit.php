@@ -3,7 +3,7 @@
 	  echo form_hidden('id_produk',$edit->id_produk);
 ?>
 <div class="Ket">
-<table width="100%"><tr>
+<table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right"><?php echo form_submit('submit','Simpan','class=tmbl-putih'); ?>
 		<a href="<?php echo base_url().'admin/produk';?>" class="tmbl-putih"><i class='icon-remove'></i> Batal</a></td></tr>

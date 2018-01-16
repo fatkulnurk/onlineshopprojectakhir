@@ -5,7 +5,7 @@ header("Content-Disposition: attachment; filename=penjualan.xls");
 header("Pragma: no-cache");
 header("Expires: 10");
 ?>
-	<table width="100%" border="1">
+	<table width="100%" border="1" class="table">
 	<tr>
 	<th >No.</th><th >Id Pesanan</th><th >Tgl pengiriman </th><th >Nama Barang</th>
 	<th >Qty</th>

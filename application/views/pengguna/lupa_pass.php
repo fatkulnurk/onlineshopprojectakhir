@@ -10,14 +10,14 @@ Tolong masukkan alamat email Anda. Kami akan kirim email dengan instruksi untuk 
 <div class="nama-ktkbiasa" align="center">Email* :
 <?php $em=array('name'=>'email', 
 				'id'=>'email', 
-				'class'=>'inputan',
+				'class'=>'input is-info',
 				'value'=>set_value('email')
 				);	echo form_input($em); 
 	echo "<div class='merah'>".form_error('email')."</div>"; ?>
 							  
 </div>
 <table width="100%"> <tr><td>
-<?php echo '<a href="'.base_url().'">'. form_button('login','« KEMBALI','class=tmbl-oren')."</a></td><td align='right'>".
+<?php echo '<a href="'.base_url().'">'. form_button('login','ï¿½ KEMBALI','class=tmbl-oren')."</a></td><td align='right'>".
  form_submit('submit','KIRIM','class=tmbl-oren'); 
  echo form_close();?></td></tr>
 </table>

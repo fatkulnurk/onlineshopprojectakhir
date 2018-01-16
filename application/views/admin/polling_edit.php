@@ -1,6 +1,6 @@
 <div id="kotak-putus"><?php 	echo form_open('pengguna_polling/polling_edit_exe');?>
 <div class="Ket">
-	<table width="100%"><tr>
+	<table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right"><?php echo form_Submit('submit','Simpan','class=tmbl-putih');
 	foreach($pertanyaan->result_array() as $pr) {
@@ -11,7 +11,7 @@
 	</table>
 </div>
 
-<table align="center" width="100%">
+<table align="center" width="100%" class="table">
 <tr><td>
 
 

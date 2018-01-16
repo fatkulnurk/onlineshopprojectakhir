@@ -8,13 +8,13 @@
 } );
 </script>
 
-<div id="kotak-putus"><div class="Ket"><table width="100%"><tr>
+<div id="kotak-putus"><div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right">
 	</td></tr>
 	</table>
 </div>
-	<table id="example" class="display" width="100%">
+	<table id="example" class="display" width="100%" class="table">
 	<thead>
 <tr><th>No.</th><th>Nama</th><th>Email</th><th>Pesan </th><th>Tanggal </th><th>Tools </th></tr>
 	</thead>

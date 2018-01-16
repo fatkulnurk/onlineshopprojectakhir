@@ -6,7 +6,7 @@ foreach($barang->result_array() as $brg)
 	{
  ?>
  <div id="kotak"><div class='tulisan-red'><?php echo $brg['nama_barang']; ?></div>
- <table align="center"><tr>
+ <table align="center" class="table"><tr>
 <td><img src="<?php echo base_url().'images/'.$brg['gambar']; ?>" width="200"></td>
 <td valign="top"><div class="keterangan"><?php echo $brg['keterangan'];?></div>
 <div class="keterangan"><?php echo "Rp ".number_format($brg['harga'],2,',','.'); ?></div>
@@ -16,7 +16,7 @@ foreach($barang->result_array() as $brg)
 	</div>
 
 	<?php } ?>
-	<table class="t_data" width="100%">
+	<table class="t_data" width="100%" class="table">
 	<?php
 foreach($komentar->result_array() as $k)
 	{?>

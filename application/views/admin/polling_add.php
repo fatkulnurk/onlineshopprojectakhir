@@ -29,7 +29,7 @@ Home :: Polling
 <div id="kotak-biasa">
 
 <center>
-<table><tr><td>
+<table class="table"><tr><td>
   Pertanyaan Polling :<br>
   <textarea rows="3" name="pertanyaan" cols="36"></textarea><?php $today = date("Y-m-d"); ?>
 <input name="tanggal" type="hidden" value="<?php echo $today; ?>"><p>

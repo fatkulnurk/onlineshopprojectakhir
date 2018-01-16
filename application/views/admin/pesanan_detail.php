@@ -1,13 +1,13 @@
 <?php foreach($data as $det){
  ?>
-<div id="kotak-putus"><div class="Ket"><table width="100%"><tr>
+<div id="kotak-putus"><div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title.' - ' .$det->id_pesanan; ?> </td>
 	<td align="right"><?php echo '<a href="'.base_url().'admin/pesanan" class="tmbl-putih"><i class="icon-list"></i> Lihat pesanan lainnya</a>'; ?>
 	</td></tr>
 	</table>
 </div>
 
-<table  width="100%" class="t_data"><tr><th>PENGIRIMAN</th><th>PEMESAN</th><th>DATA KONFIRMASI</th><th>STATUS PENGIRIMAN</th></tr>
+<table  width="100%" class="t_data" class="table"><tr><th>PENGIRIMAN</th><th>PEMESAN</th><th>DATA KONFIRMASI</th><th>STATUS PENGIRIMAN</th></tr>
 	<tr><td valign="top"><table><tr><td>Id Pesanan</td><td>:</td><td><b><?php echo $det->id_pesanan; ?></b></td></tr>
 			   <tr><td>Nama</td><td>:</td><td><?php echo $det->nama; ?></td></tr>
 			   <tr><td valign="top">Alamat </td><td valign="top">:</td><td><?php echo $det->alamat.' <br> '. $det->kota_kabupaten.' <br> '. $det->propinsi; ?></td></tr>

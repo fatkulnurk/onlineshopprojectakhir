@@ -1,4 +1,7 @@
 <td valign="top" height="60">
+    <p class="bannergoblok">
+        <img src="../asset/images/bannergoblok.jpg">
+    </p>
 <?php if($this->session->flashdata('message')){?>
 <p class='flashdata'> <?php echo $this->session->flashdata('message');?> </p>
 <?php } ?>
@@ -29,12 +32,6 @@
 <br/>
     <section class="is-content">
         <div class="columns">
-            <div class="column is-3 has-text-centered">
-                <div class="control">
-                    <p class="button">HOT</p>
-                    <p class="button">BUY 2 GET 4</p>
-                </div>
-            </div>
             <div class="column is-7">
                 <div class="field has-addons">
                     <div class="control is-expanded has-icons-left">
@@ -68,7 +65,7 @@
 </td></tr>
 <td valign="top">
 
-<?php 
+<?php
 	if (empty($data)){
 	echo"<font color='red'>Data Tidak Tersedia</font>";
 	}
@@ -79,7 +76,7 @@
 ?>
 
 <div class="barang">
-<?php echo form_open('pengguna/add_keranjang'); 
+<?php echo form_open('pengguna/add_keranjang');
 		  echo form_hidden('id_barang',$brg['id_barang']);
 		  echo form_hidden('harga',$brg['harga']);
 		  echo form_hidden('nama_barang',$brg['nama_barang']);

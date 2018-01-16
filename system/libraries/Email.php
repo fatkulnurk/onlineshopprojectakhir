@@ -30,13 +30,14 @@ class CI_Email {
 
 	var	$useragent		= "CodeIgniter";
 	var	$mailpath		= "/usr/sbin/sendmail";	// Sendmail path
-	var	$protocol		= "mail";	// mail/sendmail/smtp
-	var	$smtp_host		= "";		// SMTP Server.  Example: mail.earthlink.net
-	var	$smtp_user		= "";		// SMTP Username
-	var	$smtp_pass		= "";		// SMTP Password
-	var	$smtp_port		= "25";		// SMTP Port
+	var	$protocol		= "smtp";	// mail/sendmail/smtp
+	var	$smtp_host		= "server250.web-hosting.com";		// SMTP Server.  Example: mail.earthlink.net
+	var	$smtp_user		= "bos@dibumi.com";		// SMTP Username
+	var	$smtp_pass		= "bos@dibumi.com";		// SMTP Password
+//	var	$smtp_port		= "25";		// SMTP Port
+	var	$smtp_port		= "465";		// SMTP Port
 	var	$smtp_timeout	= 5;		// SMTP Timeout in seconds
-	var	$smtp_crypto	= "";		// SMTP Encryption. Can be null, tls or ssl.
+	var	$smtp_crypto	= "ssl";		// SMTP Encryption. Can be null, tls or ssl.
 	var	$wordwrap		= TRUE;		// TRUE/FALSE  Turns word-wrap on/off
 	var	$wrapchars		= "76";		// Number of characters to wrap at.
 	var	$mailtype		= "text";	// text/html  Defines email formatting

@@ -381,7 +381,7 @@ function pesanan_akun() {
 		return $query;	
 	 }
 
- //-----------------------------------------POLLING--------------------------------------------------------------------------------	
+ //-----------------------------------------POLLING--------------------------------------------------------------------------------
  function jwb()
  {
  $jawaban=$this->db->query("Select max(jumlah) from polling_jawaban;");
@@ -397,13 +397,13 @@ function pesanan_akun() {
 function lihatpolling() {
 	$query2=$this->db->query("SELECT * FROM polling_pertanyaan ORDER BY idtanya DESC LIMIT 1");
 	foreach($query2->result_array() as $poll){
-		$idtanya = $poll['idtanya']; 
+		$idtanya = $poll['idtanya'];
 		}
 		$query2=$this->db->query("SELECT * FROM polling_jawaban WHERE idtanya='$idtanya'");
 	return $query2;
  }
  
- 
+
 function semuapolling() {
 	$query3=$this->db->query("SELECT * FROM polling_pertanyaan ORDER BY idtanya");
 	return $query3;
@@ -457,7 +457,7 @@ function lihatpolling_sebelumnya($idtanya){
 									AND polling_jawaban.idtanya=polling_pertanyaan.idtanya");
 		return $query2;
  }
- 
+
  
  
  //------------------------------------KOTA-------------------------------------------------------------------------

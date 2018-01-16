@@ -1,5 +1,5 @@
 <div id="kotak-putus">
-<div class="Ket"><table width="100%"><tr>
+<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right"><?php echo "<a href='".base_url()."admin/penjualan'>". form_button('Insert','Transaksi Harian','class=tmbl-oren')."</a>"; ?>
 	<?php echo "<a href='".base_url()."admin/penjualan_bulanan'>". form_button('Insert','Transaksi Bulanan','class=tmbl-oren')."</a>"; ?>
@@ -15,7 +15,7 @@ echo form_button('Insert','Lihat Transaksi','class=tmbl-ok');
 </center>
 
 <div id="kotak-biasa">
-	<table id="example" class="display" width="100%">
+	<table id="example" class="table" width="100%">
 	<thead>
 	<tr>
 	<th>No.</th>

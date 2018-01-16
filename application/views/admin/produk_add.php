@@ -1,5 +1,5 @@
 <div id="kotak-putus"><?php echo form_open('admin/produk_add'); ?>
-<div class="Ket"><table width="100%"><tr>
+<div class="Ket"><table width="100%" class="table"><tr>
 	<td><img src="<?php echo base_url();?>asset/img/prod.png"> <?php echo $title; ?> </td>
 	<td align="right"><?php echo form_submit('submit','Simpan','class=tmbl-putih'); ?>
 		<a href="javascript:history.back(1)" class="tmbl-putih"><i class='icon-remove'></i> Batal</a></td></tr>
@@ -9,7 +9,7 @@
 <?php if($this->session->flashdata('message')){?>
 <p class='flashdata'> <?php echo $this->session->flashdata('message');?> </p>
 <?php } ?>
-<table align="center" border="0">
+<table align="center" border="0" class="table">
  
   <tr>
     <td><font color='#252222' face='Verdana, Geneva, Arial, Helvetica, Sans-Serif' size='2px'>

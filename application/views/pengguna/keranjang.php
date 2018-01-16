@@ -1,13 +1,13 @@
 <table  align="center" width="90%" >
 <tr><td colspan="2">
 <?php echo form_open("pengguna/update_keranjang"); ?>
-<div class="nama-content"><strong>Daftar Pesanan Anda</strong></div>
+<div class="nama-content"><h2 class="title is-2">Daftar Pesanan Anda</h2></div>
 <?php if($this->session->flashdata('message')){?>
 <p class='flashdata'> <?php echo $this->session->flashdata('message');?> </p>
 <?php } ?>
 <div class="buku-tamu"><?php if(!$this->cart->contents()):
-	echo "<font color='red'>Keranjang Kosong</font><div align='right'>".nbs(10);
-	echo "<a href ='".base_url()."'>".form_button('Kembali ke Katalog','Kembali ke Katalog','class=tmbl-oren')."</a></div>";
+	echo "<h3 class='title is-5'>Keranjang Kosong</h3><div align='right'>".nbs(10);
+	echo "<a href ='".base_url()."'>".form_button('Kembali ke Katalog','Kembali ke Katalog','class="button is-info"')."</a></div>";
 else:?>
 	<table   class="t_kranjang" width="100%">
 	<tr>

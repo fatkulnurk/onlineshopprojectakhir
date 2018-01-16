@@ -1,6 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 
+@font-face {
+	font-family: Verdana;
+	src: url(../font/SF-Pro-Text-Regular.otf);
+}
+@font-face {
+	font-family: Geneva;
+	src: url(../font/SF-Pro-Text-Regular.otf);
+}
+@font-face {
+	font-family: Arial;
+	src: url(../font/SF-Pro-Text-Regular.otf);
+}
+@font-face {
+	font-family: Helvetica;
+	src: url(../font/SF-Pro-Text-Regular.otf);
+}
+@font-face {
+	font-family: Sans-Serif;
+	src: url(../font/SF-Pro-Text-Regular.otf);
+}
+
+
 body {
 font: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 	color:#282828;
@@ -8,6 +30,7 @@ font: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 	background:#E5E5E5;
 	margin: 0px;
 	padding: 0px;
+	font-size: 14px !important;
 	}
 	
 #main{ 

@@ -30,6 +30,6 @@ echo $us['nama'].'<br>'.$us['alamat'].'<br>'.$us['kota_kabupaten'].'<br>'.$us['p
 <a href="<?php echo base_url();?>pengguna_akun/alamat">Pengaturan alamat</a>
 </div>
 </td></tr>
-<tr><td>nxn
+<tr><td>
 </td></tr>
 
